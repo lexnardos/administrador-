@@ -1,0 +1,10 @@
+.custom-card {
+    padding: 20px;
+    height:700px;
+    width: 100%
+  }
+  .img-thumbnail {
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  

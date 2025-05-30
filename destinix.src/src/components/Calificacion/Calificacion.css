@@ -1,0 +1,65 @@
+/* Estilos para la tarjeta del listado */
+.custom-card {
+    border-radius: 1rem;
+    border: none;
+    background-color: #f9f9f9;
+  }
+  
+  /* Encabezado del formulario */
+  h2.fw-bold {
+    color: #343a40;
+  }
+  
+  /* Botón principal */
+  .btn-success {
+    border-radius: 0.5rem;
+    font-weight: 600;
+  }
+  
+  /* Tabla */
+  .table thead th {
+    background-color: #e9ecef;
+    color: #495057;
+  }
+  
+  .table td,
+  .table th {
+    vertical-align: middle;
+  }
+  
+  /* Botones de acción */
+  .btn-primary,
+  .btn-danger {
+    border-radius: 0.4rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  /* Modal personalizado */
+  .modal-content {
+    border-radius: 1rem;
+  }
+  
+  .modal-header {
+    background-color: #198754;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  .modal-footer {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  /* Inputs del formulario */
+  .modal-body .form-control {
+    border-radius: 0.5rem;
+    box-shadow: none;
+    transition: border-color 0.3s;
+  }
+  
+  .modal-body .form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+  }
+  

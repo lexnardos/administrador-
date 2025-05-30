@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css2?family=Archivo+Black&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Questrial&display=swap);
+
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Questrial", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f3;
+}
+
+/* Contenedor principal */
+.container {
+    width: 900px;
+    height: 90%;
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(20, 31, 101, 0.3);
+}
+
+/* Contenedor de los formularios */
+.container-form {
+    width: 100%;
+    display: flex;
+    transition: transform 0.7s ease;
+}
+
+/* Títulos y subtítulos en los formularios */
+.container-form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-form span {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos de los inputs */
+.container-input {
+    width: 280px;
+    height: 37px;
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 6px;
+    background-color: #EEEEEE;
+}
+
+.container-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.container-input input:focus {
+    box-shadow: 0 0 10px rgba(171, 171, 171, 0.5);
+    background-color: #F5F5F5;
+}
+
+/* Estilos del botón */
+.button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 140px;
+    height: 37px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: #205fb8;
+    color: white;
+}
+
+.button:hover {
+    background-color: #081542;
+    transform: scale(1.05);
+}
+
+/* Animación para los formularios */
+.form {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.7s ease;
+}
+
+.form-login {
+    transform: translateX(0);
+}
+
+.form-register {
+    transform: translateX(100%);
+}
+
+.container-form {
+    display: flex;
+    position: relative;
+    width: 200%;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .container-form {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+.fechan{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+}

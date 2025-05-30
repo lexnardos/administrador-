@@ -1,0 +1,222 @@
+body{
+    font-family: 'Cabin', sans-serif;
+    background-color: #fff;
+    color: #000000;
+}
+
+/*Inicio de estilo del nav*/
+nav.barra-lateral {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 65px;
+    background-color: #122465;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(50, 50, 50, 0.3);
+    transition: width 0.4s;
+    z-index: 1000;
+}
+nav.barra-lateral:hover {
+    width: 240px; 
+}
+nav.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 59px; 
+}
+nav.barra-lateral li {
+    padding: 5px;
+}
+nav.barra-lateral a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+}
+nav.barra-lateral a:hover {
+    background-color: #4c5bff; /* Cambio de fondo más sutil */
+}
+nav.barra-lateral a .nav-item {
+    margin-left: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+nav.barra-lateral a:focus {
+    background-color: #006b96cb; /* Destacar cuando está enfocado */
+    outline: 2px solid #2150bfbe; /* Añadir borde de enfoque */
+}
+nav.barra-lateral:hover a .nav-item {
+    opacity: 1; 
+}
+nav.barra-lateral a:hover {
+    background-color: #0000ff89;
+}
+nav.barra-lateral i {
+    font-size: 18px; 
+}
+/*Fin de estilo del nav*/
+
+/*Inicio de estilo del logo nav*/
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 10px 0;
+}
+.logo img {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+nav.barra-lateral:hover .logo span {
+    opacity: 1; 
+}
+/*Fin de estilo del logo nav*/
+
+/*Inicio de estilo del contenedor perfil*/
+.contenedor-perfil {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; 
+}
+.perfil-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.perfil-img:hover {
+    transform: scale(1.1);
+}
+.menu-opciones {
+    display: block;
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    background-color: #141d6b;
+    border: 2px solid #0d1322;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 120px; 
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+}
+.contenedor-perfil:hover .menu-opciones {
+    opacity: 1; 
+    visibility: visible; 
+    transform: translateY(0); 
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0s;
+}
+.menu-opciones a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+.menu-opciones a:hover {
+    background-color: #1c2b5a;
+}
+/*Fin de estilo del contenedor perfil*/
+.nada{
+    text-align: center;
+    color: #0e0d22;
+}
+h1{
+    color: rgb(0, 53, 169);
+    margin-top: 100px;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Móviles Pequeños (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    nav.barra-lateral {
+        width: 40px;
+    }
+
+    nav.barra-lateral:hover {
+        width: 140px;
+    }
+
+    .contenedor-perfil {
+        top: 5px;
+        right: 5px;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        margin-left: 5%;
+    }
+    nav.barra-lateral {
+        width: 50px;
+    }
+
+    nav.barra-lateral:hover {
+        width: 180px;
+    }
+
+    .contenedor-perfil {
+        top: 5px;
+        right: 5px;
+    }
+}
+
+/* Pantallas Medianas (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 55px;
+    }
+    nav.barra-lateral {
+        width: 60px;
+    }
+
+    nav.barra-lateral:hover {
+        width: 200px;
+    }
+}
+
+/* Pantallas Grandes (min-width: 1280px) */
+@media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 60px;
+        margin-top: 80px;
+    }
+    nav.barra-lateral {
+        width: 65px;
+    }
+
+    nav.barra-lateral:hover {
+        width: 240px;
+    }
+}

@@ -1,0 +1,21 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+.barra-lateral {
+    width: 250px; /* Ajusta según prefieras */
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+}
+
+.content {
+    margin-left: 250px; /* Debe coincidir con el ancho de la barra */
+    padding: 20px;
+    flex-grow: 1;
+}
